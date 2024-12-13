@@ -13,8 +13,8 @@ public class GameControll : MonoBehaviour
     public Text scoreText;
     public bool gameOver = false;
     public float scrollSpeed = -1.5f;
-
     private int score = 0;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -43,7 +43,8 @@ public class GameControll : MonoBehaviour
             return;
         }
         score++;
-        scoreText.text = "Score:" + score.ToString();
+        string v = "Score: " + score.ToString();
+        scoreText.text = v;
     }
     public void BirdDied()
     {
