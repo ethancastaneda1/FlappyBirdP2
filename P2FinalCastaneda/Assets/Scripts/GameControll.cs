@@ -5,12 +5,13 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameControll : MonoBehaviour
 {
     public static GameControll instance;
     public GameObject gameOverText;
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
     public bool gameOver = false;
     public float scrollSpeed = -1.5f;
     private int score = 0;
